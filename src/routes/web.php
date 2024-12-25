@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ItemController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::middleware('auth')->group(function () {
+    Route::get('/', [AuthController::class, 'index']);
+    Route::get('/mypage', [UserController::class, 'profile']);
+    Route::get('/mypage/profile', [UserController::class, 'edit_profile']);
+    Route::get('/purchase/address/:item_id', [UserController::class, 'edit_address']);
+    Route::get('/sell', [ItemController::class, 'sell']);
+    Route::get('/item/:item_id', [ItemController::class, 'item']);
+    Route::get('/purchase/:item_id', [ItemController::class, 'purchase']);
+
 });

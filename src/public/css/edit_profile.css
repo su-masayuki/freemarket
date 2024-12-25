@@ -1,0 +1,110 @@
+.form {
+    margin: 0 auto;
+    width: 680px;
+    text-align: center;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.profile-edit-content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.main-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+}
+
+.input-container,
+.page-link {
+    margin-top: 20px;
+}
+
+.btn-container {
+    margin-top: 80px;
+}
+
+.input-container input {
+    background-color: transparent;
+    width: 700px;
+    height: 40px;
+    font-size: 18px;
+    border: 2px solid #909090;
+    border-radius: 5px;
+}
+
+.input-container h3 {
+    text-align: left;
+}
+
+.input-container p {
+    text-align: center;
+    color: #ed1a3d;
+}
+
+.btn-container input {
+    background-color: #FF5555;
+    width: 700px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flash_message {
+    margin-bottom: 50px;
+    padding: 10px 0;
+    background-color: #f2c0c1;
+}
+
+.page-link {
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #0073CC;
+}
+
+.user-container {
+    text-align: center;
+    float: left;
+    width: 1340px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 auto;
+}
+
+.user-image {
+    margin-right: 120px;
+    width: 150px;
+    height: 150px;
+    background: gainsboro;
+    border-radius: 50%;
+}
+
+.profile-edit-button {
+    display: inline-block;
+    margin: 50px 0px;
+    width: 150px;
+    height: 30px;
+
+    color: #ff5555;
+    border: 2px solid #ff5555;
+    border-radius: 5%;
+    text-decoration: none;
+}

@@ -1,0 +1,151 @@
+.register__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.main-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+}
+
+.input-container,
+.page-link {
+    margin-top: 20px;
+    border: 2px solid gainsboro;
+}
+
+.btn-container {
+    margin-top: 20px;
+    /* border-bottom: 2px solid gainsboro; */
+}
+
+.input-container input {
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    border: 2px solid #909090;
+    border-radius: 5px;
+}
+
+.input-container h3 {
+    text-align: left;
+}
+
+.input-container p {
+    text-align: center;
+    color: #ed1a3d;
+}
+
+.btn-container a {
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    color:#0073CC;;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 100px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.flash_message {
+    margin-bottom: 50px;
+    padding: 10px 0;
+    background-color: #f2c0c1;
+}
+
+.page-link {
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #0073CC;
+}
+
+.item-img-container {
+    max-width: 650px;
+    float: left;
+}
+
+.img-box {
+    background-color: gainsboro;
+    /* margin: 100px; */
+    width: 100px;
+    height: 100px;
+}
+
+.item-container {
+    width: 650px;
+    float: right;
+    margin-right: 100px;
+    ;
+}
+
+.confirmation-container{
+    margin: 20px;
+}
+
+.confirmation-item {
+    /* float: left; */
+    display:flex;
+    padding-bottom: 20px;
+    border-bottom: 2px solid gainsboro;
+}
+
+.confirmation-payment{
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 20px;
+}
+
+.confirmation-address{
+    border-bottom: 2px solid gainsboro;
+}
+
+.confirmation-final{
+    display: block;
+}
+
+main{
+    display: flex;
+}
+
+.left-side
+{
+    width: 50%;
+    display: inline-block;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.price-row,.payment-row{
+    display: flex;
+
+}
+
+.price-row h3,
+.payment-row h3{
+    margin-right: 20px;
+}
+
+.btn-container input {
+    background-color: #FF5555;
+    width: 400px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
