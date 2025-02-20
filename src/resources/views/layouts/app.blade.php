@@ -15,19 +15,26 @@
     <header>
         <div class="header__inner">
             <div class="header-utilities">
-                <img src=" {{asset('storage/logo.svg')}}">
-
-                @if (Auth::check())
-                <input type="text" class="search" placeholder="なにをお探しですか？">
-
-                @endif
+                <a href="{{ route('items.index') }}">
+                    <img src="{{ asset('storage/logo.svg') }}" alt="Logo">
+                </a>
+                <form action="{{ route('items.search') }}" method="GET" class="search-form">
+                    <input type="text" name="keyword" class="search" placeholder="なにをお探しですか？">
+                </form>
 
                 <nav>
                     <ul class="header-nav-list">
                         @if (Auth::check())
                         <li class="header-nav-item">
-                            <form class="form" action="/logout" method="post">@csrf<button class="header-nav__button">ログアウト</button></form>
+                            <form class="form" action="/logout" method="post">
+                                @csrf
+                                <button class="header-nav__button">ログアウト</button>
+                            </form>
                         </li>
+                        <li class="header-nav-item"><a class="header-nav-item-mypage" href="/mypage">マイページ</a></li>
+                        <li class="header-nav-item"><a class="header-nav-item-sell" href="/sell">出品</a></li>
+                        @else
+                        <li class="header-nav-item"><a class="header-nav-item-login" href="/login">ログイン</a></li>
                         <li class="header-nav-item"><a class="header-nav-item-mypage" href="/mypage">マイページ</a></li>
                         <li class="header-nav-item"><a class="header-nav-item-sell" href="/sell">出品</a></li>
                         @endif
@@ -39,6 +46,7 @@
 
     <main>
         @yield('content')
+        @yield('js')
     </main>
 </body>
 

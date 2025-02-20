@@ -1,126 +1,146 @@
-.register__content {
-    margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 1230px;
+.item-detail-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-.main-title {
-    margin-bottom: 20px;
-    text-align: center;
+.item-img-container {
+    flex: 1;
 }
 
-.form {
-    margin: 0 auto;
-    width: 25%;
-    text-align: center;
+.img-box {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
 }
 
-.input-container,
-.page-link {
-    margin-top: 20px;
+.img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-.btn-container {
-    margin-top: 20px;
+.item-info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.input-container input {
-    background-color: transparent;
-    width: 400px;
-    height: 40px;
-    font-size: 18px;
-    border: 2px solid #909090;
-    border-radius: 5px;
+.item-name {
+    font-size: 28px;
+    margin: 0;
 }
 
-.input-container h3 {
-    text-align: left;
+.brand-name {
+    color: #666;
+    font-size: 16px;
 }
 
-.input-container p {
-    text-align: center;
-    color: #ed1a3d;
+.item-info-container h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
 }
 
-.btn-container input, a{
-    background-color: #FF5555;
-    width: 400px;
-    height: 40px;
-    font-size: 18px;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px 100px;
-    text-decoration: none;
+.review,
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
 }
 
-.flash_message {
-    margin-bottom: 50px;
-    padding: 10px 0;
-    background-color: #f2c0c1;
-}
-
-.item-img-container{
-    max-width: 650px;
-    float: left;
-}
-
-.img-box{
-    background-color:gainsboro;
-    margin:100px;
-    width: 500px;
-    height: 500px;
-}
-
-.item-container{
-    width: 650px;
-    float: right;
-    margin-right: 100px;
-}
-
-.item-container img{
+.review img,
+.comment img {
     width: 20px;
     height: 20px;
 }
 
-.review,
-.comment{
-    display: inline-block;
-    padding: 10px;
+.btn-container {
+    margin: 20px 0;
 }
 
-.comment-list{
-    display: inline-block;
-    background-color: gainsboro;
-    width: 300px;
-    height: 40px;
-}
-
-.comment-form{
-    width: 300px;
-    height: 80px;
-    border: 1px solid black;
-    border-radius: 2px;
-}
-
-.item-title{
+.btn-purchase {
     display: block;
-    width: 200px;
+    width: 100%;
+    padding: 15px;
+    background: #ff3366;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
-.item-category{
-    display: inline-block;
-    display: flex;
-    width: 200px;
-    padding: 30px;
+.btn-purchase:hover {
+    background: #e62e5c;
 }
 
-.waku{
-    width: 600px;
-    display: inline-block;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.frame {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
 
+.category-label {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 14px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.btn-comment-submit {
+    background: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-comment-submit:hover {
+    background: #0056b3;
+}
+
+.like-btn img {
+    width: 48px;
+    height: 48px;
+}
+
+.like-btn img {
+    width: 48px;
+    height: 48px;
+}
+
+@media (max-width: 768px) {
+    .item-detail-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item-name {
+        font-size: 24px;
+    }
+
+    .item-info-container h2 {
+        font-size: 20px;
+    }
 }

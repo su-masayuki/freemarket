@@ -16,20 +16,17 @@ class AuthController extends Controller
         return view('index');
     }
 
-
-
-
     public function postRegister(RegisterRequest $request)
     {
         try {
             User::create([
                 'name' => $request['name'],
                 'email' => $request['email'],
-                'password' => Hash::make($request['password']),
+                'password' => Hash::make($request['password']),'is_first_login' => true,
             ]);
-            return redirect('login')->with('result', '会員登録が完了しました');
+            return redirect('login');
         } catch (\Throwable $th) {
-            return redirect('register')->with('result', 'エラーが発生しました');
+            return redirect('register');
         }
     }
 
@@ -43,7 +40,7 @@ class AuthController extends Controller
         if (Auth::attempt(['email' => $request['email'], 'password' => $request['password']])) {
             return redirect('/');
         } else {
-            return redirect('login')->with('result', 'メールアドレスまたはパスワードが間違っております');
+            return redirect('login');
         }
     }
 
