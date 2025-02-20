@@ -1,7 +1,7 @@
 # フリーマーケット
 ## 環境構築
 ### Dockerビルド
-1.gh repo clone su-masayuki/ability-test
+1.gh repo clone su-masayuki/freemarket
 
 2.docker-compose up -d --build
 
@@ -21,11 +21,11 @@
 6.php artisan db:seed
 
 ## 使用技術
-・PHP 8.0
+・PHP 8.3.6
 
-・Laravel 10.0
+・Laravel 8.75
 
-・MySQL 8.0
+・MySQL 8.0.26
 
 ## URL
 ・環境開発:http://localhost/
